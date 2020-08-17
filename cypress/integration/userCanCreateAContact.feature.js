@@ -7,7 +7,15 @@ describe('user can create a contact', () => {
 		cy.get('#phone').type('0700 1010100764040738')
 		cy.get('#company').type('Craft Academy')
 		cy.get('#notes').type('Awesome coder')
-		cy.get('#twitter').type('@mauro_avellaneda')
+        cy.get('#twitter').type('@mauro_avellaneda')
+        cy.get('#submit').click()
 
     })
+    it('displays a name of the new contact', () => {
+		cy.get('#contact-list').should('contain', 'Mauro')
+	})
+	
+	it('displays the phone number of the new contact', () => {
+		cy.get('#contact-list').should('contain', '0764040738')
+	})
 })
