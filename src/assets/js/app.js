@@ -1,3 +1,5 @@
+const storage = window.localStorage
+
 const  renderContacts = () => {
     const  contacts = JSON.parse(storage.getItem('contacts'))
   

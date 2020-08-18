@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: cornflowerblue;
+    font-family: 'Fredoka One', cursive;
+}
+
+.title {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+#add-contact {
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    top: 150px;
+    margin: 20px;
+    padding: 5px;
+    background-color: #e0a70a;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.5s;
+}
+#add-contact:hover {
+    background-color: #4CAF50; 
+    color: white;
+  }
+.bookbox {
+    position: absolute;
+    top: 220px;
+    height: 400px;
+    width: 50%;
+    
+
+}
+.labels {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+button, input, textarea {
+    background-color:white;
+    border: 1px solid black;
+    margin: 5px;
+    outline: 0;
+    height: 30px;
+}
+
+#contact-list {
+    position: absolute;
+    left: 20px;
+    top: 800px;
+}
+#submit {
+
+        text-align: center;
+        padding: 5px;
+        margin: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        color:black;
+        background-color:#e0a70a;
+        border-radius: 50px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        
+      }
+      
+      #submit:hover {background-color:#4CAF50}
+      
+      #submit:active {
+        background-color:#4CAF50;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      
+}
+#notes {
+    height: 100px;
+}
