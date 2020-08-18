@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Address book</title>
+  </head>
+
+  <body>
+    <div class="title"><h1>Welcome to Mauro's address book</h1></div>
+
+    <button id="add-contact">Add Contact</button>
+
+    <div class="bookbox">
+      <form id="new-contact-form">
+        <div class="labels">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" />
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="text" />
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" />
+          <label for="twitter">Twitter</label>
+          <input id="twitter" name="twitter" type="text" />
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" type="text"></textarea>
+          <input id="submit" type="submit" value="Save contact" />
+        </div>
+      </form>
+    </div>
+
+    <div id="contact-list"></div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
